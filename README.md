@@ -32,7 +32,7 @@ Management · Sci-fi · Space · Singleplayer
 ### Links
 
 - 🎮 Play: [renderscribe-interactive.itch.io/galactic-idle](https://renderscribe-interactive.itch.io/galactic-idle)
-- 🔒 Privacy policy: [renderscribe.github.io/galactic-idle-privacy](https://renderscribe.github.io/galactic-idle-privacy/)
+- 🔒 Privacy policy: [renderscribe.github.io/galactic-idle/privacy](https://renderscribe.github.io/galactic-idle/privacy/)
 
 ---
 
