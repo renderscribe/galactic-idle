@@ -1,6 +1,11 @@
 {
   "updates": [
     {
+      "version": "1.2.1",
+      "title": "Starmap fixes, offline timers, and conquest polish",
+      "content": "This update hardens the unified Starmap that merged Conquest and Expedition into one screen, plus a few other fixes:\n\n- Fixed a crash when your task force arrived at a planet after a multi-hop move across the star map.\n- Fixed conquest requiring your fleet to be physically on-site well before Fleet Power 100 — it now correctly stays simple fleet-power-gated in the early game, and only requires your task force to be at the target once you're deploying it seriously.\n- Fixed the first-visit Starmap tutorial not scrolling into view on small screens.\n- Build, ship, and research queues now advance by real elapsed time while the game is closed or backgrounded, capped at an hour.\n- Fixed the \"PLANET CONQUERED\" banner staying stuck on-screen if a conquest finished while you were off the Starmap tab."
+    },
+    {
       "version": "1.1.1",
       "title": "Current release",
       "content": "Galactic Idle is live with the full core loop: build up your homeworld, research a full tech tree across six branches, build a fleet, and take the fight to the galaxy.\n\n- **Unified Starmap** — conquest and exploration now share one interwoven star map. Send your task force hopping across planets and sectors, stage from owned territory for cheaper travel, and watch the frontier respawn faster the more you control.\n- **Command Doctrines** — spend Command Points earned from conquest on a 3-branch doctrine tree as your empire grows.\n- **Diplomacy & covert ops** — trade with factions, sign non-aggression pacts and alliances, or run espionage and covert missions against rivals.\n- **Offline progress** — come back to resources earned while you were away.\n- Available in English, German, Spanish, French, Indonesian, Polish, Portuguese, Russian, and Chinese."
