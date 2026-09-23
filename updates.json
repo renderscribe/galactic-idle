@@ -1,6 +1,11 @@
 {
   "updates": [
     {
+      "version": "1.2.2",
+      "title": "Small-screen layout fixes for the Starmap",
+      "content": "Follow-up to 1.2.1: two more layout fixes found while properly QA-sweeping every language on a phone-sized screen.\n\n- Fixed the star map being wider than the screen on small phones, which made part of it permanently unreachable no matter how you panned.\n- Fixed long translated labels (German especially) getting illegibly truncated in the Starmap's tab bar — they now wrap and hyphenate cleanly instead."
+    },
+    {
       "version": "1.2.1",
       "title": "Starmap fixes, offline timers, and conquest polish",
       "content": "This update hardens the unified Starmap that merged Conquest and Expedition into one screen, plus a few other fixes:\n\n- Fixed a crash when your task force arrived at a planet after a multi-hop move across the star map.\n- Fixed conquest requiring your fleet to be physically on-site well before Fleet Power 100 — it now correctly stays simple fleet-power-gated in the early game, and only requires your task force to be at the target once you're deploying it seriously.\n- Fixed the first-visit Starmap tutorial not scrolling into view on small screens.\n- Build, ship, and research queues now advance by real elapsed time while the game is closed or backgrounded, capped at an hour.\n- Fixed the \"PLANET CONQUERED\" banner staying stuck on-screen if a conquest finished while you were off the Starmap tab."
