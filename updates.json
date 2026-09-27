@@ -1,6 +1,11 @@
 {
   "updates": [
     {
+      "version": "1.2.3",
+      "title": "Starmap polish: first-conquest moment and desktop layout",
+      "content": "Two more Starmap fixes:\n\n- Fixed your first planet conquest getting buried on phones — the victory banner, a lore popup, and a feedback prompt could all pile on top of each other at once, with a notification stack covering your fleet status underneath. They now appear one at a time, and notifications stay out of the way of what you're looking at.\n- Fixed the Starmap's main action button being pushed below the visible area on some desktop window sizes, so it's always reachable without scrolling."
+    },
+    {
       "version": "1.2.2",
       "title": "Small-screen layout fixes for the Starmap",
       "content": "Follow-up to 1.2.1: two more layout fixes found while properly QA-sweeping every language on a phone-sized screen.\n\n- Fixed the star map being wider than the screen on small phones, which made part of it permanently unreachable no matter how you panned.\n- Fixed long translated labels (German especially) getting illegibly truncated in the Starmap's tab bar — they now wrap and hyphenate cleanly instead."
