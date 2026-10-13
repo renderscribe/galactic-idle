@@ -2,36 +2,29 @@
 
 ![Galactic Idle — an idle 4X space strategy game](galactic-idle-cover.png)
 
-## Galactic Idle — a free idle 4X you play in your browser
+## Galactic Idle — a free idle 4X space strategy game for Android
 
-**[▶ Play Galactic Idle free on itch.io](https://renderscribe-interactive.itch.io/galactic-idle)** — no signup, no download, works on desktop and mobile.
+**[▶ Get Galactic Idle on Google Play](https://play.google.com/store/apps/details?id=com.renderscribe.galacticidle&referrer=utm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dsite)** · **[Website & trailer](https://renderscribe.github.io/galactic-idle/)**
 
 Restore a dying colony's power grid, automate it with a growing web of
 structures, and expand across a **20-planet galaxy** through military
-conquest or diplomacy. Galactic Idle blends idle/incremental progression with
-real 4X decision-making — this isn't just number-go-up, it's tech trees,
-fleet composition, faction diplomacy, and an economy that pushes back.
+conquest or diplomacy.
 
 ### Key features
 
 - 5-resource economy with real offline progress
 - 6-branch research tree with prerequisites
-- Upkeep-based economy that creates genuine growth challenges, not just idle scaling
+- Fleet building and tactical battles (or auto-resolve)
 - Galaxy map with 20 planets and 5-faction diplomacy
 - 17 expedition sectors with timed encounters
-- Empire Dashboard with analytics and goal tracking
-- 50 goals, adaptive music, and a lore timeline
+- 50 goals, doctrines, adaptive music and a lore timeline
 
-Free, ad-free, no pay-to-win mechanics.
-
-**Genre:** Strategy · 4X · Automation · Clicker · Idle · Incremental ·
-Management · Sci-fi · Space · Singleplayer
-
----
+Free to play, no pay-to-win mechanics.
 
 ### Links
 
-- 🎮 Play: [renderscribe-interactive.itch.io/galactic-idle](https://renderscribe-interactive.itch.io/galactic-idle)
+- 🌐 Website: [renderscribe.github.io/galactic-idle](https://renderscribe.github.io/galactic-idle/)
+- 📱 Google Play: [Galactic Idle](https://play.google.com/store/apps/details?id=com.renderscribe.galacticidle&referrer=utm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dsite)
 - 🔒 Privacy policy: [renderscribe.github.io/galactic-idle/privacy](https://renderscribe.github.io/galactic-idle/privacy/)
 
 ---

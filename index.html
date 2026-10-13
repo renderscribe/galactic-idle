@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galactic Idle — build an idle space empire on Android</title>
+<meta name="description" content="Galactic Idle is a free idle 4X space strategy game for Android. Automate your colony, research, command fleets, conquer a 20-planet galaxy and ally with five factions.">
+<meta name="theme-color" content="#070b1f">
+<link rel="canonical" href="https://renderscribe.github.io/galactic-idle/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Galactic Idle — build an idle space empire">
+<meta property="og:description" content="Free idle 4X for Android. Automate, research, command battles and conquer the galaxy.">
+<meta property="og:image" content="https://renderscribe.github.io/galactic-idle/media/og.jpg">
+<meta property="og:url" content="https://renderscribe.github.io/galactic-idle/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --bg:#070b1f; --bg2:#0d1433; --card:#111a3d; --line:#25327a;
+  --text:#e9eeff; --muted:#a3afd9; --cyan:#35d4ff; --gold:#ffc83d;
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--cyan)}
+img,video{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.eyebrow{color:var(--cyan);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}
+h1,h2,h3{line-height:1.15;margin:0}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:.4em}
+section{padding:72px 0}
+.lead{color:var(--muted);font-size:1.1rem;max-width:62ch}
+
+nav{position:sticky;top:0;z-index:10;background:rgba(7,11,31,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(37,50,122,.5)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+nav b{letter-spacing:.04em}
+nav .links{display:flex;gap:22px;align-items:center;font-size:.92rem}
+nav .links a{color:var(--muted);text-decoration:none}
+nav .links a:hover{color:#fff}
+nav .links a.btn{color:#1a1200}
+@media(max-width:640px){nav .links a.hide-s{display:none}}
+
+.hero{position:relative;padding:48px 0 84px;text-align:center;overflow:hidden;
+  background:radial-gradient(ellipse at 50% 0%,rgba(80,70,255,.28),transparent 65%)}
+.hero-img{width:min(780px,100%);margin:0 auto 26px;border-radius:var(--radius);border:1px solid var(--line);box-shadow:0 20px 70px rgba(53,100,255,.3)}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);text-shadow:0 0 40px rgba(53,212,255,.5)}
+.hero p{margin:18px auto 30px;max-width:56ch;font-size:1.2rem;color:#cdd7ff}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:linear-gradient(135deg,#ffd75e,#ff9f2e);color:#1a1200;box-shadow:0 8px 30px rgba(255,170,40,.35)}
+.btn.ghost{border:1px solid var(--line);color:var(--text);background:rgba(17,26,61,.6)}
+.badges{margin-top:22px;color:var(--muted);font-size:.9rem;display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+
+.video{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 70px rgba(53,100,255,.25);background:#000;aspect-ratio:16/9}
+.video video{width:100%;height:100%;object-fit:cover}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:32px}
+.card{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.card .ico{font-size:1.8rem}
+.card h3{margin:10px 0 6px;font-size:1.15rem}
+.card p{margin:0;color:var(--muted);font-size:.96rem}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:36px}
+.stat{text-align:center;padding:20px 10px;border-radius:var(--radius);border:1px solid var(--line);background:rgba(17,26,61,.6)}
+.stat b{display:block;font-size:2.1rem;color:var(--gold)}
+.stat span{color:var(--muted);font-size:.88rem}
+
+.shots{display:flex;gap:18px;overflow-x:auto;padding:8px 20px 22px;margin:28px -20px 0;scroll-snap-type:x mandatory}
+.shots img{height:min(560px,70vh);width:auto;border-radius:16px;border:1px solid var(--line);scroll-snap-align:center;flex:none}
+@media(min-width:1100px){.shots{justify-content:center;overflow:visible}.shots img{height:auto;width:19%}}
+
+.cta{text-align:center;background:radial-gradient(ellipse at center,rgba(139,92,255,.25),transparent 70%)}
+footer{border-top:1px solid rgba(37,50,122,.5);padding:34px 0;color:var(--muted);font-size:.9rem;text-align:center}
+footer a{color:var(--muted)}
+footer .links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <b>GALACTIC IDLE</b>
+  <div class="links">
+    <a class="hide-s" href="#trailer">Trailer</a>
+    <a class="hide-s" href="#features">Features</a>
+    <a class="hide-s" href="#screens">Screens</a>
+    <a class="btn primary" style="padding:8px 18px" href="https://play.google.com/store/apps/details?id=com.renderscribe.galacticidle&amp;referrer=utm_source%3Dgithub-pages%26utm_medium%3Dwebsite%26utm_campaign%3Dsite">Get it on Google Play</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <img class="hero-img" src="media/hero.jpg" alt="Galactic Idle" width="1024" height="500">
+  <div class="eyebrow">Now on Android · Free</div>
+  <h1>Build an idle space empire</h1>
+  <p>Restore a dying colony, automate it, research your way up the tech tree, and conquer a 20-planet galaxy. Your empire keeps growing while you're away.</p>
+  <div class="btns">
+    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.renderscribe.galacticidle&amp;referrer=utm_source%3Dgithub-pages%26utm_medium%3Dwebsite%26utm_campaign%3Dsite">▶ Get it on Google Play</a>
+    <a class="btn ghost" href="#trailer">Watch the trailer</a>
+  </div>
+  <div class="badges"><span>✓ Free to play</span><span>✓ No pay-to-win</span><span>✓ Offline progress</span><span>✓ 9 languages</span></div>
+</div></header>
+
+<section id="trailer"><div class="wrap">
+  <div class="eyebrow">Trailer</div>
+  <h2>See the empire in action</h2>
+  <p class="lead">From a single struggling world to fleets, doctrines and conquest — all real gameplay.</p>
+  <div class="video" style="margin-top:28px">
+    <video controls preload="none" playsinline poster="media/trailer-poster.jpg">
+      <source src="media/trailer.mp4" type="video/mp4">
+      Your browser can't play this video. <a href="media/trailer.mp4">Download the trailer</a>.
+    </video>
+  </div>
+</div></section>
+
+<section id="features" style="background:var(--bg2)"><div class="wrap">
+  <div class="eyebrow">Features</div>
+  <h2>Idle at its core. Strategy all the way down.</h2>
+  <p class="lead">Galactic Idle blends incremental progression with real 4X decisions: tech trees, fleet composition, faction diplomacy and an economy that pushes back.</p>
+  <div class="grid">
+    <div class="card"><div class="ico">⚡</div><h3>Build &amp; automate</h3><p>Energy, minerals, credits, research and plasma. Grow a web of structures and balance the upkeep a bigger empire demands.</p></div>
+    <div class="card"><div class="ico">🧬</div><h3>Research</h3><p>A six-branch tech tree with prerequisites. Every breakthrough turns into lasting production.</p></div>
+    <div class="card"><div class="ico">🚀</div><h3>Command a fleet</h3><p>Build ships, deploy task forces and take command of tactical battles — or auto-resolve and let your fleet handle it.</p></div>
+    <div class="card"><div class="ico">🪐</div><h3>Conquer the galaxy</h3><p>Take 20 planets by force or diplomacy, and spend Command Points on doctrines to specialize your empire.</p></div>
+    <div class="card"><div class="ico">🤝</div><h3>Five factions</h3><p>Build reputation through trade and envoys, sign non-aggression pacts and forge alliances that change how you grow.</p></div>
+    <div class="card"><div class="ico">🧭</div><h3>Expeditions</h3><p>Send task forces into 17 dangerous sectors. Weigh risk against reward — a bad outcome can cost ships.</p></div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>20</b><span>planets to take</span></div>
+    <div class="stat"><b>5</b><span>factions</span></div>
+    <div class="stat"><b>17</b><span>expedition sectors</span></div>
+    <div class="stat"><b>50</b><span>goals</span></div>
+  </div>
+</div></section>
+
+<section id="screens"><div class="wrap">
+  <div class="eyebrow">Screenshots</div>
+  <h2>Made for your phone</h2>
+  <div class="shots">
+    <img loading="lazy" src="media/shot-01-command-hub.jpg" alt="Command Hub screen" width="560" height="969">
+    <img loading="lazy" src="media/shot-03-expand-production.jpg" alt="Expand production with buildings" width="560" height="969">
+    <img loading="lazy" src="media/shot-05-unlock-research.jpg" alt="Research tree" width="560" height="969">
+    <img loading="lazy" src="media/shot-06-raise-the-fleet.jpg" alt="Build your fleet" width="560" height="969">
+    <img loading="lazy" src="media/shot-04-starmap.jpg" alt="Galaxy starmap" width="560" height="969">
+  </div>
+</div></section>
+
+<section class="cta"><div class="wrap">
+  <h2>Your galaxy is waiting</h2>
+  <p class="lead" style="margin:0 auto 26px">Free to play, built around your decisions: your empire progresses because you chose well, not because you were forced to watch an ad.</p>
+  <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.renderscribe.galacticidle&amp;referrer=utm_source%3Dgithub-pages%26utm_medium%3Dwebsite%26utm_campaign%3Dsite">▶ Get it on Google Play</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="links">
+    <a href="https://play.google.com/store/apps/details?id=com.renderscribe.galacticidle&amp;referrer=utm_source%3Dgithub-pages%26utm_medium%3Dwebsite%26utm_campaign%3Dsite">Google Play</a>
+    <a href="privacy/">Privacy policy</a>
+    <a href="updates.json">Update feed</a>
+    <a href="https://github.com/renderscribe/galactic-idle">GitHub</a>
+  </div>
+  © RenderScribe Interactive — an independent studio building Galactic Idle.<br>
+  Google Play and the Google Play logo are trademarks of Google LLC.
+</div></footer>
+</body>
+</html>
