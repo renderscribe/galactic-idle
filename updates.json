@@ -1,6 +1,11 @@
 {
   "updates": [
     {
+      "version": "1.2.4",
+      "title": "Alchemy, Admirals, Threat Level and a month of fixes",
+      "content": "A big catch-up release: a month of fixes and new systems since 1.2.3.\n\n**New**\n- **Alchemy / Black Market** crafting tab, with cooldowns so recipes can't be spammed.\n- **Named Admirals & Crew**, and a **Galactic Threat Level** that pushes back as you grow.\n- **Reactive soundtrack & Lore Codex**, plus **Ancient Precursor Artefacts**.\n- Send **different task forces to different destinations** at the same time.\n- **Scout ship** for early expeditions while you wait on research.\n- **Tap to speed up** construction and research timers, and tap to improve the odds on event popups.\n- Your home planet is now **Sol Prime**, and it's bigger and easier to tap on phones.\n\n**Balance**\n- The first reward is smaller, the early curve is smoother, the research gap around 165–320 is filled, and Space Dock is gated behind the buildings before it.\n\n**Fixes**\n- Tutorial overlays that came back blank or black after backgrounding, the publisher-splash flicker, and notifications piling on top of tutorials.\n- First-conquest banner burying itself on phones, and the desktop map action card falling below the fold.\n- Stale grid-strain % after coming back from offline, and overlapping or ghost task-force labels on the Starmap.\n- All eight languages now cover the \"speed up construction\" tutorial step."
+    },
+    {
       "version": "1.2.3",
       "title": "Starmap polish: first-conquest moment and desktop layout",
       "content": "Two more Starmap fixes:\n\n- Fixed your first planet conquest getting buried on phones — the victory banner, a lore popup, and a feedback prompt could all pile on top of each other at once, with a notification stack covering your fleet status underneath. They now appear one at a time, and notifications stay out of the way of what you're looking at.\n- Fixed the Starmap's main action button being pushed below the visible area on some desktop window sizes, so it's always reachable without scrolling."
